@@ -36,7 +36,7 @@ Declarations
 
 Code
 ```vb.net
- Friend Sub EnableTaskbarTransparancy()
+ Friend Sub EnableTaskbarStyle()
         Dim tskBarClassName As String = "Shell_TrayWnd"
         Dim tskBarHwnd As IntPtr = FindWindow(tskBarClassName, Nothing)
         Dim accent = New AccentPolicy()
