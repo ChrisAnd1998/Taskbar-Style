@@ -2,8 +2,8 @@
 This code allows you to set the Windows taskbar Style to Transparant, Blur or Acrylic in VB.NET like TranslucentTB does.
 
 #Declarations
-```visualbasic
-  Friend Structure WindowCompositionAttributeData
+```vb.net
+    Friend Structure WindowCompositionAttributeData
         Public Attribute As WindowCompositionAttribute
         Public Data As IntPtr
         Public SizeOfData As Integer
@@ -35,7 +35,7 @@ This code allows you to set the Windows taskbar Style to Transparant, Blur or Ac
 ```
 
 #Code
-```visualbasic
+```vb.net
  Friend Sub EnableTaskbarTransparancy()
         Dim tskBarClassName As String = "Shell_TrayWnd"
         Dim tskBarHwnd As IntPtr = FindWindow(tskBarClassName, Nothing)
